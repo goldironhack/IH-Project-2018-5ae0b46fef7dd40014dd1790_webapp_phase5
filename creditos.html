@@ -4,13 +4,14 @@
 		<meta charset = "utf-8" >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="style.css" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 		<title>NOVA</title>
 	</head>
 	<body style="background-color:rgb(100, 100, 100);">
 
-		<div class="container-fluid">
+		<div class="container" >
 
 			<div class="row">
 				<div class="col-md-12">
@@ -21,7 +22,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<nav class="navigator">
-						<a href="inicio.html"> <button type="button" name="button"> INICIO</button> </a>
+						<a href="index.html"> <button type="button" name="button"> INICIO</button> </a>
 						<a href="https://developers.google.com/maps/get-started/?hl=es-419"> <button type="button" onclick="alert('Va a ser redireccionado a la API de google que se usara en siguientes entregas')" name="button"> BUSCAR HOGAR</button> </a>
 						<a href="creditos.html"> <button type="button" name="button"> CREDITOS</button> </a>
 					</nav>
@@ -29,35 +30,11 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-6">
-					<img class="img-fluid" src="https://i.pinimg.com/originals/ec/e2/c1/ece2c1b389e6cf6d516b46258c4f1bc2.jpg" alt="">
-				</div>
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<p style="color:rgb(255, 255, 255)">Pagina creada por: Luis Alejandro Higuaran Serrano
 					 correo: lahiguarans@unal.edu.co </p>
 				</div>
 			</div>
-
-			<table class="table1">
-				<tr>
-					<th>CONDICION</th>
-			 		<th>LUGAR</th>
-					<th>PRESUPUESTO</th>
-					<th>DIRECCIÓN</th>
-				</tr>
-				<tr>
-					<td>CASA</td>
-					<td>BOGOTA</td>
-					<td>700.000$</td>
-					<td>CLL 26 CRA 40</td>
-				</tr>
-				<tr>
-					<td>APARTAMENTO</td>
-					<td>MEDELLIN</td>
-					<td>850.000$</td>
-					<td>CLL 13 CRA 70</td>
-				</tr>
-			</table>
 
 			<div class="row">
 				<div class="col-md-6">
@@ -67,7 +44,7 @@
 
 					<div id="tableWrapper">
 						<div id="tableScroll">
-							<table class="table2">
+							<table>
 								<thead>
 									<tr>
 										<th colspan="2"> Total carbon dioxide emissions from all sectors, all fuels. </th>
@@ -89,28 +66,13 @@
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-md-3">
-					<button id="getDataButton"> Get data </button>
-					<button id="updateTableButton"> Update table </button>
-					<button id="updateChartButton"> Update Chart</button>
-					<button id="drawCircles"> Update Map</button>
-				</div>
-				<div class="col-md-9" >
-					<svg id="statesChart">
-					</svg>
-				</div>
-			</div>
-
-
 		</div>
 
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!---->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="main.js"></script>
-		<script async defer
- 	 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWYDB9v1MopiTtPpUXMDaCwAlOQbtn3c&callback=onGoogleMapResponse">
- 		</script>
 	</body>
 </html>
